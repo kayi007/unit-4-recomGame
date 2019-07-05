@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Crystals Collector Game</title>
+</head>
+<body>
+    <header>
+        <div class="containter-fluid">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <h1>Bling Bling Collector</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- first row -->
+        <div class="row">
+            <div class="col-12 gameRules">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p id="lastP">Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+
+        <!-- second row -->
+        <div class="row mt-3">
+            <!-- first column: 4 crystal imgs & User total score -->
+            <div class="col-7">
+                <!-- first row of second row first column: imgs -->
+                <div class="row">
+                    <!-- red crystal -->
+                    <div class="col-3">
+                        <img src="assets/images/red_crystal.png" class="img-fluid" alt="red heart crystal" id="redCrystal" />
+                    </div>
+                    <!-- blue diamond -->
+                    <div class="col-3">
+                        <img src="assets/images/blue_crystal.png" class="img-fluid" alt="blue diamond" id="blueCrystal" />
+                    </div>
+                    <!-- yellow crystal -->
+                    <div class="col-3">
+                        <img src="assets/images/yellow_crystal.png" class="img-fluid" alt="yellow crystal" id="yellowCrystal" />
+                    </div>
+                    <!-- green diamond -->
+                    <div class="col-3">
+                        <img src="assets/images/green_crystal.png" class="img-fluid" alt="green crystal" id="greenCrystal" />
+                    </div>
+                </div>
+                <!-- second row of second row first column: user score-->
+                <div class="row">
+                    <div class="col-12 scoreBoard">
+                        <p class="mt-2">Your total score is: 
+                            <div id="userScore"></div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second column: random number & win counts -->
+            <div class="col-5">
+                <div class="row">
+                    <!-- first column of second row second column -->
+                    <div class="col-6 scoreBoard">
+                        <p class="text-center mt-2">Target Score</p>
+                        <div id="randomNum"></div>
+                    </div>
+                    <!-- second column of second row second column -->
+                    <div class="col-6" id="countBoard">
+                        <p class="mt-2" id="wins">Wins: 0</p>
+                        <p id="losses">Losses: 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript Link -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>

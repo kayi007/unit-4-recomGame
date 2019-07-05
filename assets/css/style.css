@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    background-image: url("../images/crystal_header.jpg");
+    color: black;
+    text-shadow: 3px 3px white;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid pink;
+    margin-bottom: 0px;
+}
+body{
+    background-image: url("../images/white-waves.png");
+}
+p{
+    font-family: 'Crimson Text', serif;
+    font-size: 12px;
+    margin-bottom: 8px !important;
+}
+#lastP{
+    margin-bottom: 0 !important;
+}
+.gameRules{
+    background: rgb(247, 247, 166);
+    color: gray;
+    padding: 10px;
+    border: 1px dashed purple;
+    border-radius: 20px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.scoreBoard{
+    background-color: lightblue;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+#countBoard{
+    background-color: rgba(216, 112, 147, 0.644);
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
