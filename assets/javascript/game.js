@@ -18,7 +18,6 @@ function getTargetScore(){
     let min = Math.ceil(19);
     let max = Math.floor(120);
     targetScore = Math.floor(Math.random() * (max - min + 1)) + min;
-    // return targetScore;
 }
 
 // Set Crystal Score: randomly generate between 1-12
