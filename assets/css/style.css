@@ -33,13 +33,30 @@ img{
     max-width: 100%;
     height: auto;
 }
-.scoreBoard{
-    background-color: lightblue;
+#scoreBoard{
+    background-color: rgba(173, 216, 230, 0.726);
     border: 1px solid lightgray;
     border-radius: 10px;
 }
 #countBoard{
     background-color: rgba(216, 112, 147, 0.644);
     border-radius: 10px;
-    border: 1px solid lightgray;
+    border: 1px dashed lightgray;
+}
+#target{
+    font-size: 20px;
+    font-weight: 20%;
+    text-decoration: underline;
+    text-shadow: 1px 1px white;
+}
+.score{
+    font-size: 16px;
+}
+#userScore{
+    color: grey;
+    font-family: 'Special Elite', cursive;
+    font-size: 90px;
+}
+span{
+    margin-left: 30%;
 }
