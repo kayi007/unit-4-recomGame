@@ -60,3 +60,14 @@ img{
 span{
     margin-left: 30%;
 }
+#end{
+    text-align: center;
+    font-size: 12px;
+    background-color: rgba(130, 219, 130, 0.555);
+    padding: 10px;
+    border-top: 5px solid rgba(190, 245, 82, 0.623);
+}
+#lastP{
+    color: grey;
+    margin-bottom: 0;
+}
